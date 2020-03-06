@@ -66,7 +66,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-        getData('hotelname,baseprice,commentcount').then((data) => {
+        const data = getData('hotelname,baseprice,commentcount');
             const names = data.result.hotelname;
             const basePrice = data.result.baseprice;
             const commentCount = data.result.commentcount;
@@ -133,8 +133,6 @@ class App extends Component {
                 data,
             })
             //#endregion
-        })
-
 
     }
 
