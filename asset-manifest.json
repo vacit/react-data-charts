@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/react-data-charts/static/css/main.69eda509.chunk.css",
-    "main.js": "/react-data-charts/static/js/main.9178ae65.chunk.js",
-    "main.js.map": "/react-data-charts/static/js/main.9178ae65.chunk.js.map",
+    "main.js": "/react-data-charts/static/js/main.fc887f0c.chunk.js",
+    "main.js.map": "/react-data-charts/static/js/main.fc887f0c.chunk.js.map",
     "runtime-main.js": "/react-data-charts/static/js/runtime-main.0f16f49f.js",
     "runtime-main.js.map": "/react-data-charts/static/js/runtime-main.0f16f49f.js.map",
-    "static/js/2.3f272596.chunk.js": "/react-data-charts/static/js/2.3f272596.chunk.js",
-    "static/js/2.3f272596.chunk.js.map": "/react-data-charts/static/js/2.3f272596.chunk.js.map",
+    "static/js/2.036709f7.chunk.js": "/react-data-charts/static/js/2.036709f7.chunk.js",
+    "static/js/2.036709f7.chunk.js.map": "/react-data-charts/static/js/2.036709f7.chunk.js.map",
     "index.html": "/react-data-charts/index.html",
-    "precache-manifest.ea27fdbb119662bebc13d5160f7db703.js": "/react-data-charts/precache-manifest.ea27fdbb119662bebc13d5160f7db703.js",
+    "precache-manifest.ef4c1091599b418706ef2e57bf70f989.js": "/react-data-charts/precache-manifest.ef4c1091599b418706ef2e57bf70f989.js",
     "service-worker.js": "/react-data-charts/service-worker.js",
     "static/css/main.69eda509.chunk.css.map": "/react-data-charts/static/css/main.69eda509.chunk.css.map",
-    "static/js/2.3f272596.chunk.js.LICENSE.txt": "/react-data-charts/static/js/2.3f272596.chunk.js.LICENSE.txt"
+    "static/js/2.036709f7.chunk.js.LICENSE.txt": "/react-data-charts/static/js/2.036709f7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0f16f49f.js",
-    "static/js/2.3f272596.chunk.js",
+    "static/js/2.036709f7.chunk.js",
     "static/css/main.69eda509.chunk.css",
-    "static/js/main.9178ae65.chunk.js"
+    "static/js/main.fc887f0c.chunk.js"
   ]
 }
