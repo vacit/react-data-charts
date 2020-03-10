@@ -16,7 +16,7 @@ const AuthButton = props => {
       Sign out
     </button>
   ) : (
-    <small className='text-right text-muted '>
+    <small className=' text-light '>
       Please login with: teset@test.com, password: test
     </small>
   );
