@@ -91,73 +91,73 @@ class App extends Component {
   };
 
   componentDidMount() {
-    getData('hotelname,baseprice,commentcount').then(data => {
-      const names = data.result.hotelname;
-      const basePrice = data.result.baseprice;
-      const commentCount = data.result.commentcount;
-      const { uniqueNames, uniqueCount } = this.getDistribution(names);
-      // console.log(names, basePrice, uniqueCount, data)
-      const pieOption = this.getPieOption(uniqueNames, uniqueCount);
-      //   console.log(pieOption);
-      //#region setState
-      this.setState({
-        pieOption: {
-          ...pieBaseObj,
-          legend: {
-            ...pieBaseObj.legend,
-            data: pieOption.legendData,
-            selected: pieOption.selected
-          },
-          series: [
-            {
-              ...pieBaseObj.series[0],
-              data: pieOption.seriesData
-            }
-          ]
+    const data = getData('hotelname,baseprice,commentcount');
+    console.log(data)
+    const names = data.result.hotelname;
+    const basePrice = data.result.baseprice;
+    const commentCount = data.result.commentcount;
+    const { uniqueNames, uniqueCount } = this.getDistribution(names);
+    // console.log(names, basePrice, uniqueCount, data)
+    const pieOption = this.getPieOption(uniqueNames, uniqueCount);
+    //   console.log(pieOption);
+    //#region setState
+    this.setState({
+      pieOption: {
+        ...pieBaseObj,
+        legend: {
+          ...pieBaseObj.legend,
+          data: pieOption.legendData,
+          selected: pieOption.selected
         },
-        lineOption1: {
-          ...lineBaseObj,
-          xAxis: {
-            ...lineBaseObj.xAxis,
-            data: uniqueNames
-          },
-          series: [
-            {
-              ...lineBaseObj.series[0],
-              data: uniqueCount
-            }
-          ]
+        series: [
+          {
+            ...pieBaseObj.series[0],
+            data: pieOption.seriesData
+          }
+        ]
+      },
+      lineOption1: {
+        ...lineBaseObj,
+        xAxis: {
+          ...lineBaseObj.xAxis,
+          data: uniqueNames
         },
-        lineOption2: {
-          title: {
-            text: 'Base Price',
-            subtext: 'Hotels base price in a sample search result'
-          },
-          xAxis: {
-            type: 'category',
-            data: names,
-            axisTick: {
-              alignWithLabel: true
-            },
-            axisLabel: {
-              rotate: -90
-            }
-          },
-          yAxis: {
-            type: 'value'
-          },
-          series: [
-            {
-              data: basePrice,
-              type: 'line'
-            }
-          ]
+        series: [
+          {
+            ...lineBaseObj.series[0],
+            data: uniqueCount
+          }
+        ]
+      },
+      lineOption2: {
+        title: {
+          text: 'Base Price',
+          subtext: 'Hotels base price in a sample search result'
         },
+        xAxis: {
+          type: 'category',
+          data: names,
+          axisTick: {
+            alignWithLabel: true
+          },
+          axisLabel: {
+            rotate: -90
+          }
+        },
+        yAxis: {
+          type: 'value'
+        },
+        series: [
+          {
+            data: basePrice,
+            type: 'line'
+          }
+        ]
+      },
 
-        data
-      });
-      //#endregion
+      data
     });
+    //#endregion
   }
 
   render() {

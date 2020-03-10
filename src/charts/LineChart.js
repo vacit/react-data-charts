@@ -5,7 +5,7 @@ const LineChart = props => {
   return (
     <div>
       <ReactEcharts
-        className='py-4 px-1 bg-light'
+        className='py-4 px-1 bg-light '
         option={props}
         notMerge={true}
         lazyUpdate={true}

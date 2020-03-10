@@ -19,7 +19,7 @@ const PieChart = props => {
         // theme={'dark'}
         // showLoading ={true}
         style={{
-          height: '90vh'
+          height: '90vh',
         }}
         // onChartReady={this.onChartReadyCallback}
         // onEvents={EventsDict}
