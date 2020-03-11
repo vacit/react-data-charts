@@ -13,6 +13,9 @@ function Nav(props) {
       align-items-center'
       style={{ backgroundColor: 'rgb(150,200,100)' }}
     >
+      <Link className='nav-link' to={process.env.PUBLIC_URL +'/home'}>
+        Home
+      </Link>
       <Link className='nav-link' to={process.env.PUBLIC_URL + '/piechart'}>
         Pie Chart
       </Link>

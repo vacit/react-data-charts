@@ -9,7 +9,7 @@ const LoginPage = props => {
   const authObj = { ...props.authObj };
 
   let { from } = location.state || {
-    from: { pathname: process.env.PUBLIC_URL + '/piechart' }
+    from: { pathname: process.env.PUBLIC_URL + '/home' }
   };
 
   const handleInputChange = event => {
